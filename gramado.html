@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gramado - A Cidade dos Sonhos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+
+    header {
+      background: linear-gradient(135deg, #654ea3, #eaafc8);
+      color: white;
+      padding: 3rem 1rem 3rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    }
+    header p {
+      font-weight: 300;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    main {
+      flex: 1;
+      max-width: 1100px;
+      margin: 3rem auto 3rem;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+      transition: box-shadow 0.3s ease;
+    }
+    section:hover {
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #654ea3;
+      padding-bottom: 0.3rem;
+      font-size: 2rem;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .text-block {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .image-caption {
+      font-size: 0.85rem;
+      text-align: center;
+      color: #999;
+      margin-top: 0.4rem;
+    }
+
+    /* Responsive spacing adjustment */
+    @media (max-width: 720px) {
+      header {
+        padding-bottom: 3rem;
+      }
+      main {
+        margin-top: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gramado</h1>
+    <p>A Cidade dos Sonhos na Serra Gaúcha</p>    
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Sobre Gramado</h2>
+      <div class="content-grid">
+        <div class="text-block">
+          <p>
+            Gramado é uma charmosa cidade localizada na Serra Gaúcha, Rio Grande do Sul, Brasil. Conhecida por sua arquitetura europeia, gastronomia requintada e clima acolhedor, Gramado é um dos destinos turísticos mais famosos do Brasil, especialmente durante o inverno.
+          </p>
+          <p>
+            Fundada oficialmente em 1875, a cidade desenvolveu-se devido à colonização alemã e italiana, resultando numa rica mistura cultural que pode ser apreciada em suas festas típicas e culinária.
+          </p>
+        </div>
+        <img
+          src="https://jornaldigitalcanela.com.br/wp-content/uploads/2020/02/Prefeitura-de-Gramado.jpg"
+          alt="Prefeitura de Gramado"
+          loading="lazy"
+        />
+      </div>
+    </section>
+    <!-- Restante omitido para encurtar -->
+  </main>
+
+  <footer>
+    <p>© 2024 Gramado - Informações Turísticas. Desenvolvido com carinho.</p>
+  </footer>
+</body>
+</html>
